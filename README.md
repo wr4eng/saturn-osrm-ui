@@ -9,12 +9,16 @@
 
 ### VSCodium
 
-<pre>
+```
 codium --install-extension dbaeumer.vscode-eslint
+
 codium --install-extension esbenp.prettier-vscode
+
 codium --install-extension dsznajder.es7-react-js-snippets
+
 codium --install-extension eamodio.gitlens
-</pre>
+
+```
 
 ### Preparation
 
