@@ -5,7 +5,10 @@ import { map } from './core/MapView';
 //import { findFonts } from './core/mapUtil';
 
 const SNAP_POINT_COLOR = '#1565C0';
-const SNAP_POINT_SIZE = 4;
+const SNAP_POINT_SIZE = 2;
+const SNAP_POINT_OPACITY = 0.85;
+//const WAY_POINT_COLOR = '#1565C0';
+//const WAY_POINT_SIZE = 4;
 
 const MapRoutePointsSnap = ({ positions, onClick }) => {
   const id = useId();
@@ -36,9 +39,12 @@ const MapRoutePointsSnap = ({ positions, onClick }) => {
       type: 'circle',
       source: id,
       paint: {
-        'circle-radius': SNAP_POINT_SIZE + 2,
-        'circle-color': '#ffffff',
-        'circle-opacity': 0.6,
+        //'circle-radius': SNAP_POINT_SIZE + 2,
+        //'circle-color': '#ffffff',
+        //'circle-opacity': 0.6,
+        'circle-radius': SNAP_POINT_SIZE,
+        'circle-color': SNAP_POINT_COLOR,
+        'circle-opacity': SNAP_POINT_OPACITY,
       },
     });
 
@@ -47,11 +53,14 @@ const MapRoutePointsSnap = ({ positions, onClick }) => {
       type: 'circle',
       source: id,
       paint: {
+        //'circle-radius': SNAP_POINT_SIZE,
+        //'circle-color': SNAP_POINT_COLOR,
+        //'circle-opacity': 0.85,
+        //'circle-stroke-width': 1.5,
+        //'circle-stroke-color': '#ffffff',
         'circle-radius': SNAP_POINT_SIZE,
         'circle-color': SNAP_POINT_COLOR,
-        'circle-opacity': 0.85,
-        'circle-stroke-width': 1.5,
-        'circle-stroke-color': '#ffffff',
+        'circle-opacity': SNAP_POINT_OPACITY,
       },
     });
 
