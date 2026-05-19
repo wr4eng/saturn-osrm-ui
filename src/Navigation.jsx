@@ -21,6 +21,7 @@ import ReplayPage from './other/ReplayPage';
 import ReplayPageSnap from './other/ReplayPageSnap';
 import TripReportPage from './reports/TripReportPage';
 import StopReportPage from './reports/StopReportPage';
+import TimelineSnapPage from './other/TimelineSnapPage';
 import SummaryReportPage from './reports/SummaryReportPage';
 import ChartReportPage from './reports/ChartReportPage';
 import DriversPage from './settings/DriversPage';
@@ -64,6 +65,8 @@ import fetchOrThrow from './common/util/fetchOrThrow';
 import AuditPage from './reports/AuditPage';
 import RouteSnapReportPage from './reports/RouteSnapReportPage';
 import TripSnapReportPage from './reports/TripSnapReportPage';
+import TripxSnapReportPage from './reports/TripxSnapReportPage';
+import EtaMatrixReportPage from './reports/EtaMatrixReportPage';
 
 const Navigation = () => {
   const dispatch = useDispatch();
@@ -185,6 +188,9 @@ const Navigation = () => {
           <Route path="summary" element={<SummaryReportPage />} />
           <Route path="trips" element={<TripReportPage />} />
           <Route path="trip-snap" element={<TripSnapReportPage />} />
+          <Route path="tripx-snap" element={<TripxSnapReportPage />} />
+          <Route path="eta-matrix" element={<EtaMatrixReportPage />} />
+          <Route path="timeline-snap" element={<TimelineSnapPage />} />
           <Route path="scheduled" element={<ScheduledPage />} />
           <Route path="statistics" element={<StatisticsPage />} />
           <Route path="audit" element={<AuditPage />} />
