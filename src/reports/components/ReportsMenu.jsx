@@ -17,6 +17,7 @@ import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
 import AddRoadIcon from '@mui/icons-material/AddRoad';
 import AltRouteIcon from '@mui/icons-material/AltRoute';
 import GpsFixedIcon from '@mui/icons-material/GpsFixed';
+import GridOnIcon from '@mui/icons-material/GridOn';
 import { useLocation } from 'react-router-dom';
 import { useTranslation } from '../../common/components/LocalizationProvider';
 import { useAdministrator, useRestriction } from '../../common/util/permissions';
@@ -114,7 +115,7 @@ const ReportsMenu = () => {
       <List>
         <ListSubheader sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
           <GpsFixedIcon fontSize="small" />
-          {t('snapToRoad')}
+          {t('reportSnapToRoad')}
         </ListSubheader>
         <MenuItem
           title={t('reportRouteSnap')}
@@ -132,6 +133,23 @@ const ReportsMenu = () => {
           link={buildLink('/reports/trip-snap')}
           icon={<AltRouteIcon />}
           selected={location.pathname === '/reports/trip-snap'}
+        />
+        <MenuItem
+          title={t('reportTripxSnap')}
+          link={buildLink('/reports/tripx-snap')}
+          icon={<AltRouteIcon />}
+          selected={location.pathname === '/reports/tripx-snap'}
+        />
+        <MenuItem
+          title={t('reportEtaMatrix')}
+          link={buildLink('/reports/eta-matrix')}
+          icon={<GridOnIcon />}
+          selected={location.pathname === '/reports/eta-matrix'}
+        />
+        <MenuItem
+          title={t('reportTimeline')}
+          link={buildLink('/reports/timeline-snap')}
+          icon={<TimelineIcon />}
         />
       </List>
       <Divider />
