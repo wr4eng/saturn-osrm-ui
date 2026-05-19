@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // src/reports/RouteSnapReportPage.jsx
 
 import { Fragment, useCallback, useState } from 'react';
