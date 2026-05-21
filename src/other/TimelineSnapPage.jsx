@@ -42,7 +42,7 @@ import fetchOrThrow from '../common/util/fetchOrThrow';
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
-const MOVEMENT_THRESHOLD_M = 20; // meters — same as HTML
+const MOVEMENT_THRESHOLD_M = 20; // meters
 const TIMELINE_HEIGHT = 90; // px — collapsed height
 const TIMELINE_HEIGHT_OPEN = 130; // px — expanded with info row
 
